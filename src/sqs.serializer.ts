@@ -7,9 +7,6 @@ export class SqsSerializer implements Serializer {
     return {
       id,
       body: JSON.stringify(value),
-      delaySeconds: 0,
-      groupId: "test",
-      deduplicationId: id,
     };
   }
 }
